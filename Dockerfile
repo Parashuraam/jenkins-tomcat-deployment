@@ -20,4 +20,4 @@ COPY target/HelloWorld*.war /opt/app/tomcat/apache-tomcat-8.5.61/webapp/HelloWor
 
 EXPOSE 8080
 
-CMD ["/opt/app/tomcat/bin/catalina.sh", "run"]
+CMD ["/opt/app/tomcat/apache-tomcat-8.5.61/bin/catalina.sh", "run"]
