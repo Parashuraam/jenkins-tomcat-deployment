@@ -14,7 +14,11 @@ RUN yum -y install java
 
 RUN java -version
 
+WORKDIR /opt/app/tomcat/apache-tomcat-8.5.61/webapp
+
 add target/HelloWorld*.war /opt/app/tomcat/apache-tomcat-8.5.61/webapp/HelloWorld.war
+
+RUN touch HelloWorld.war
 
 EXPOSE 8080
 
